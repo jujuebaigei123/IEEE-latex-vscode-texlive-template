@@ -1,0 +1,245 @@
+\documentclass[letterpaper,10pt,journal,twoside]{IEEEtran}
+
+% =========================
+% Packages
+% =========================
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{bm}
+\usepackage[mathscr]{euscript}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{arydshln}
+
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage[skip=1.5pt]{caption}
+
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{cite}
+
+% Chinese support.
+% Use fandol for portability across machines. If your system has Windows CJK
+% fonts correctly installed, this can be changed to fontset=windows.
+\usepackage[UTF8,scheme=plain,fontset=fandol]{ctex}
+
+% Times-like text and math fonts, commonly used with IEEEtran.
+\usepackage{newtxtext,newtxmath}
+
+% =========================
+% Layout tuning
+% =========================
+\setlength{\floatsep}{5pt}
+\setlength{\textfloatsep}{5pt}
+\setlength{\intextsep}{5pt}
+
+\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
+
+% =========================
+% Theorem environments
+% =========================
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proof}{Proof}
+
+% =========================
+% Custom commands
+% =========================
+\definecolor{r}{rgb}{1,0,0}
+\definecolor{b}{rgb}{0,0,1}
+
+\newcommand{\todo}[1]{\textcolor{r}{[TODO: #1]}}
+\newcommand{\revise}[1]{\textcolor{b}{#1}}
+
+\begin{document}
+
+% =========================
+% Title and authors
+% =========================
+\title{Paper Title}
+
+\author{Author~A,
+        Author~B,
+        and~Author~C%
+\thanks{This work was supported by xxx. Corresponding author: xxx.}
+\thanks{Author A, Author B, and Author C are with xxx.
+Email: author@example.com.}
+}
+
+\maketitle
+
+% =========================
+% Abstract and keywords
+% =========================
+\begin{abstract}
+Write a concise summary of the problem, method, main contribution, and results.
+For IEEE-style papers, the abstract is usually one paragraph and should avoid
+citations, equations, and undefined abbreviations when possible.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Keyword one, keyword two, keyword three, keyword four.
+\end{IEEEkeywords}
+
+% =========================
+% Main text
+% =========================
+\section{Introduction}
+\label{sec:introduction}
+
+Introduce the background, motivation, research gap, objective, main idea, and
+contributions of the paper. A common structure is: why the topic matters, what
+has been done, what remains unsolved, what this paper does, and why the results
+are useful.
+
+The main contributions of this paper are summarized as follows:
+\begin{itemize}
+    \item We identify or formulate an important problem in the target domain.
+    \item We propose a method, framework, analysis, system, or design to address
+    the problem.
+    \item We validate the proposed approach through experiments, case studies,
+    theoretical analysis, or comparative evaluation.
+\end{itemize}
+
+The remainder of this paper is organized as follows.
+Section~\ref{sec:background} introduces the necessary background and problem
+definition. Section~\ref{sec:related} reviews related work.
+Section~\ref{sec:approach} presents the proposed approach.
+Section~\ref{sec:evaluation} reports the evaluation results.
+Section~\ref{sec:conclusion} concludes this paper.
+
+\section{Background and Problem Definition}
+\label{sec:background}
+
+Introduce the necessary concepts, notation, assumptions, and task definition.
+This section can also be named ``Preliminaries'', ``System Model'',
+``Problem Formulation'', or ``Materials and Methods'', depending on the paper
+type.
+
+\begin{equation}
+    y = f(x;\theta).
+    \label{eq:example}
+\end{equation}
+
+Use equations such as Eq.~\eqref{eq:example} to define important quantities,
+models, objectives, or constraints.
+
+\section{Related Work}
+\label{sec:related}
+
+Review representative work and explain the difference between existing methods
+and your work. This section may be organized by research direction, technical
+category, application scenario, or historical development. Add citations with
+\verb|\cite{}| after adding entries to \verb|ref.bib|.
+
+\section{Proposed Approach}
+\label{sec:approach}
+
+Describe the central contribution of the paper. Depending on the topic, this
+section can present a method, theory, model, algorithm, system, architecture,
+workflow, design principle, or analytical framework.
+
+\subsection{Overview}
+\label{subsec:framework}
+
+Give a high-level overview before entering details. A figure is often useful
+here to show the relationship between inputs, modules, outputs, and evaluation.
+
+\subsection{Detailed Design}
+\label{subsec:design}
+
+Describe the proposed components, assumptions, derivations, implementation
+details, or design choices. Split this subsection into multiple subsections if
+the paper has several major parts.
+
+\subsection{Procedure}
+\label{subsec:procedure}
+
+\begin{algorithm}[t]
+\caption{General Procedure}
+\label{alg:procedure}
+\begin{algorithmic}[1]
+\STATE Prepare the input data, materials, assumptions, or system state.
+\STATE Initialize the required variables, modules, or parameters.
+\FOR{each iteration, case, sample, or processing step}
+    \STATE Apply the proposed operation, analysis, or decision rule.
+    \STATE Record intermediate results if needed.
+\ENDFOR
+\STATE Return the final output, result, or conclusion.
+\end{algorithmic}
+\end{algorithm}
+
+\section{Evaluation}
+\label{sec:evaluation}
+
+Report how the proposed work is validated. This can include experiments,
+simulations, case studies, benchmarks, user studies, theoretical proofs, error
+analysis, or practical deployment results.
+
+\subsection{Setup}
+\label{subsec:setup}
+
+Describe the data, materials, apparatus, environment, implementation details,
+baselines, comparison methods, evaluation metrics, or analysis protocol.
+
+\subsection{Results}
+\label{subsec:results}
+
+\begin{table}[t]
+\centering
+\caption{Summary of representative results.}
+\label{tab:main_results}
+\begin{tabular}{lccc}
+\toprule
+Item & Metric 1 & Metric 2 & Metric 3 \\
+\midrule
+Case A & -- & -- & -- \\
+Case B & -- & -- & -- \\
+Case C & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+% \includegraphics[width=\linewidth]{image/example.pdf}
+\caption{Example figure caption.}
+\label{fig:example}
+\end{figure}
+
+\subsection{Analysis}
+\label{subsec:analysis}
+
+Analyze the meaning of the results, compare against prior work, explain
+observed trends, and discuss whether the evidence supports the claims.
+
+\subsection{Discussion}
+\label{subsec:discussion}
+
+Discuss limitations, threats to validity, practical implications, generality,
+failure cases, or future extensions.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Summarize the paper and briefly mention future work.
+
+% =========================
+% References
+% =========================
+% Add references to ref.bib and cite them in the text with \cite{}.
+% If you want to print all entries in ref.bib while drafting, uncomment:
+% \nocite{*}
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+
+\end{document}
