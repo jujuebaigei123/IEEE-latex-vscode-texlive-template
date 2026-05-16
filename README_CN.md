@@ -31,7 +31,7 @@
 
 ### Windows
 
-1. 进入 [TeX Live 官网](https://www.tug.org/texlive/) 官网下载安装程序。
+1. 进入 [TeX Live 官网](https://www.tug.org/texlive/) 下载安装程序。
 2. 安装方式选择 `Easy install`。
 3. 下载完成后，运行安装程序。
 4. 根据需要修改安装路径。
